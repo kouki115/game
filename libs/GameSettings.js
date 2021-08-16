@@ -4,13 +4,13 @@
 module.exports = class GameSettings
 {
     // ゲーム全体
-    static get FRAMERATE() { return 240; }   // フレームレート（１秒当たりのフレーム数）
+    static get FRAMERATE() { return 60; }   // フレームレート（１秒当たりのフレーム数）
 
     // タンク
     static get TANK_SPEED() { return 300.0; }	// 速度[m/s]。1frameあたり5進む => 1/30[s] で5進む => 1[s]で150進む。
     static get TANK_ROTATION_SPEED() { return 4.5; }// 回転速度[rad/s]。1frameあたり0.1進む => 1/30[s] で0.1進む => 1[s]で3[rad]進む。
     static get TANK_WAIT_FOR_NEW_BULLET() { return 1000.0 * 0.01; }  // 単位[ms]。1000 x X秒
-    static get TANK_LIFE_MAX() { return 15; }
+    static get TANK_LIFE_MAX() { return 12; }
 
     // 壁
     static get WALL_COUNT() { return 3; }
