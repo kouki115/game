@@ -82,8 +82,6 @@ module.exports = class Tank extends GameObject
             }
             else if( this.overlapWalls( setWall ) )
             {	// 壁に当たった。
-                this.iLife++;
-                return this.iLife;
                 bCollision = true;
             }
             if( bCollision )
