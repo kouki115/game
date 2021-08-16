@@ -88,8 +88,6 @@ module.exports = class Tank extends GameObject
             {	// 衝突する場合は、移動できない。
                 this.setPos( fX_old, fY_old );
                 bDrived = false;	// 前後方向の動きはなし
-                this.iLife++;
-                return this.iLife;
             }
         }
 
